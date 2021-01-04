@@ -1,0 +1,27 @@
+-- Consideraciones
+En este proyecto vamos a hacer uso de Babel para utilizar codigo moderno
+ de javascript en Node, ademas babel nos permite usar codigo moderno
+ y en caso de no ser soportado lo adecua al formato que soporta.
+-- Librerias utilizadas con babel
+	@babel/core - Para instalar babel
+	@babel/cli  - Para poder utilizar babel desde la consola
+	@babel/node - Para utilizar babel junto con node js
+	@babel/preset-env - Para especificar que estaremos utilizando
+		la última version de javascript en babel.
+
+Algo importante es que junto a instalar las librerias de arriba tambien 
+ especificamos -D para que el packageJson sepa que son dependencias de 
+ desarrollo y no del proyecto.
+
+
+-- Librerias utilizadas
+
+Como en este proyecto utilizamos mongodb como nuestra base de datos, 
+necesitamos utilizar una libreria llamada mongoose que nos permite comunicarnos con mongodb.
+-- Scripts
+babel-node para utilizar babel como si fuera node, lo cambiamos en scripts
+	para evitar codigo largo.
+En el proyecto utilizamos nodemon para no tener que estar refrescando el 
+	servidor cada vez que teniamos un cambio, pero como nodemon utiliza
+	node, tenemos que hacer uso de --exec nombreDeComando, de esta forma
+	le indicamos a nodemon el comando que queremos ejecutar. 
