@@ -2,5 +2,8 @@
     //Para decirle a Babel que modulos debe cargar desde el packageJson
     "presets": [
         "@babel/env"
+    ],
+    "plugins": [
+        "@babel/transform-runtime"
     ]
 }
